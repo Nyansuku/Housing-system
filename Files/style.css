@@ -1,0 +1,40 @@
+﻿.footer{
+    background-color:saddlebrown;
+    clear:both;
+}
+.footer1{
+    color:white;
+    text-align:center;
+}
+.mainmain {
+    height: auto;
+}
+
+    .mainmain .sidebar {
+        float: left;
+        width: 25%;
+        background-color: whitesmoke;
+    }
+
+.sidebar li {
+    display: block;
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+}
+
+.sidebar .texts {
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+    .sidebar .texts:hover {
+        color: sandybrown;
+    }
+
+.mainmain .content {
+    float: right;
+    margin-left: 20px;
+    width: 72%;
+}

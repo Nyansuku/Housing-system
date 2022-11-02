@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="houses.main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Rims Homes</title>
+    <!--css files-->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="font/css/all.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <!--js files-->
+    <script src="bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="datatables/js/jquery.dataTables.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <!--header-->
+            <section style="height:100px;">
+               
+                will add an image here or a video of height 100px;
+            </section>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="home.aspx">CaRS Homes</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link text-dark  font-weight-bold" href="home.aspx">Home</a>
+      </li>
+        </ul>
+      <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+          <asp:LinkButton ID="LinkButton1" CssClass="nav-link text-dark font-weight-bold" runat="server" OnClick="LinkButton1_Click">Member_Login</asp:LinkButton>
+      </li>
+      <li class="nav-item">
+         <asp:LinkButton ID="LinkButton2" CssClass="nav-link text-dark font-weight-bold" runat="server" OnClick="LinkButton2_Click">Admin_Login</asp:LinkButton>
+      </li>
+      <li class="nav-item">
+         <asp:LinkButton ID="LinkButton3" CssClass="nav-link text-dark font-weight-bold" runat="server" OnClick="LinkButton3_Click">Search</asp:LinkButton>
+      </li>
+          <li class="nav-item">
+         <asp:LinkButton ID="LinkButton4" CssClass="nav-link text-dark font-weight-bold" runat="server" OnClick="LinkButton4_Click">Available</asp:LinkButton>
+      </li>
+    </ul>
+  </div>
+</nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <!--footer-->
+            <div class="footer">
+                <div class="footer1">
+                    <p>all right reserved &copy;</p>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>
